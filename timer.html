@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      #timer {
+        background-color: aliceblue;
+        display: flex;
+        font-size: 6rem;
+        color: #000;
+        border: 2px solid #fff;
+        border-radius: 20px;
+      }
+      .btns {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+        height: 4rem;
+        gap: 20px;
+        
+      }
+      #startBtn, #stopBtn, #resetBtn {
+        font-size: 1.5rem;
+        width: 5rem;
+        border-radius: 20px;
+      }
+    </style>
+    <div id="timer">
+      <div>
+        00
+      </div>
+      <span>:</span>
+      <div>
+        00
+    </div>
+    <span>:</span>
+      <div>
+        00
+    </div>
+    </div>
+    <div class="btns">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn">Stop</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </body>
+  <script src="timer.js"></script>
+</html>
